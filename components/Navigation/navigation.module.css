@@ -3,8 +3,8 @@
 }
 
 .user{
-	text-align: center;
-	padding:20px 5px;
+	text-align: left ;
+	padding:10px 5px;
 	display:flex;
 	
 }
@@ -12,7 +12,7 @@
 	margin-left: 10px;
 	margin-top: 10px;
 	letter-spacing:1px;
-	text-transform: uppercase;
+	
 	color:#fff;
 }
 .user h1{
@@ -36,7 +36,7 @@
 
  .sidebar {
 	background-color:#1B334A;
-	min-height: 100vh;
+	min-height: 80vh;
 }
 
 .ul{
@@ -60,18 +60,35 @@
 .navlink{
 	color:#fff;
 	text-decoration:none;
+	margin-left: 5px;
 	cursor:pointer;
 	letter-spacing:1px;
 	text-transform: uppercase;
 }
 
+.icon{
+	color:#FF9E2A;
+}
+/* ################## Navbar{Topbar} ########## */
 
+.navbar{
+	background-color:#1B334A;
+
+}
+
+.h3{
+	font-size:1.5rem;
+	letter-spacing:2px;
+	color:#fff;
+	
+}
 
 /* ################## Dashboard ########## */
 
 .dashboard{
 	width:83vw;
-	height:100vh;
+	height:86vh;
+	
 	/* background:#163B5E; */
 	background:linear-gradient(rgba(22, 59, 94, 0.171));
 	display:flex;
@@ -79,6 +96,10 @@
 	justify-content: space-evenly;
 	align-self:center;
 	
+}
+
+.button{
+	color:#FF9E2A;
 }
 
 
@@ -95,3 +116,4 @@
 	margin:auto;
 	width:90%;
 }
+

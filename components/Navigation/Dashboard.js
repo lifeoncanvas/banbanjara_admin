@@ -2,6 +2,8 @@ import React from 'react'
 import { Pagination, PaginationItem, PaginationLink,Card,CardBody,CardTitle,CardSubtitle,Button,CardText} from "reactstrap";
 import classes from './navigation.module.css'
 import Gridtable from './Gridtable'
+import { VscAdd } from "react-icons/vsc";
+
 
 const Dashboard = () => {
 	return (
@@ -9,21 +11,15 @@ const Dashboard = () => {
       <h4>User Module Management </h4>
       <Card className={classes.card} >
     <CardBody>
-    <Button>
-        Button
+    
+      <CardTitle tag="h5" className={classes.cardtitle}>
+      <Button className={classes.button}>
+    <VscAdd/>
       </Button>
-      <CardTitle tag="h5">
-        Card title
+        User List
       </CardTitle>
-      <CardSubtitle
-        className="mb-2 text-muted"
-        tag="h6"
-      >
-        Card subtitle
-      </CardSubtitle>
-      <CardText>
-        Some quick example text to build on the card title and make up the bulk of the card's content.
-      </CardText>
+     
+     
       
       <Gridtable/>
     </CardBody>
