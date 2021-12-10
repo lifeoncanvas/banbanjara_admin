@@ -1,4 +1,6 @@
 import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import Navigation from "../components/Navigation";
 
 const Layout = (props) => {
   return (
