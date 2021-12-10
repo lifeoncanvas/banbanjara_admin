@@ -1,14 +1,12 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react'
+import Dashboard from '../components/Navigation/Dashboard'
 
-
-
-import Dashboard from "../components/Navigation/Dashboard";
-
-function Home() {
+const index = () => {
   return (
-  <Dashboard/>
-  );
+    <div>
+      <Dashboard/>
+    </div>
+  )
 }
 
-export default Home;
+export default index

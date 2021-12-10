@@ -1,17 +1,20 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import Navigation from "../components/Navigation";
+import Navigation from './index'
+import classes from './navigation.module.css'
 
-const Layout = (props) => {
+const Layout = ({children}) => {
   return (
-    <Container fluid>
-      <Row>
-        <Col xs={2} className="col">
-          <Navigation />
-        </Col>
-        <Col xs={10}>{props.children}</Col>
+    <div >
+      <Row className={`${classes.row} gx-0`} >
+        <Col xs='2' >
+          <Navigation/>
+        </Col >
+        <Col xs='10'>{children}</Col>
       </Row>
-    </Container>
+    </div>
+
+    
   );
 };
 

@@ -1,61 +1,38 @@
 import React from "react";
 import ActiveLink from './link'
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faHome,
-//   faBriefcase,
-//   faPaperPlane,
-//   faQuestion,
-//   faImage,
-//   faCopy,
-// } from "@fortawesome/free-solid-svg-icons";
-import { NavItem, NavLink, Nav } from "reactstrap";
-import classNames from "classnames";
-//import { Link } from "react-router-dom";
-import './navigation.module.css'
+import profilepic from './profilepic.jpg'
+import classes from './navigation.module.css'
+import Image from 'next/image'
 
 const Navigation = () => {
 	return(
-		<nav className='nav' >
-     {/* <style jsx>{`
-				.nav{
-                  background-color: #163B5E;
-				  
-				  height:100vh;
-				 
-				  
-                }
-      .nav-link {
-        text-decoration: none;
-		color:#fff;
-		//flex:none;
-		
-      }
-	 .nav-link ::selection {
-         color: #fff;
-          background: #FF9E2A;
-		  
-				}
-      .active:after {
-        content: ' (current page)';
-		
-      }
-    `}</style>  */}
-    <ul className="nav">
-      <li>
+		<nav className= {classes.sidebar} >
+    <div className={classes.user}>
+       <Image className={classes.image} src={profilepic} alt="profile"  width={50} height={40} />
+       <div className={classes.text} >
+       <h1> Admin </h1>
+       <h3>Vishal Properties </h3>
+       </div>
+       
+    </div>
+    <ul className={classes.ul}>
+      <li className={classes.li}>
         <ActiveLink activeClassName="active" href="/">
-          <a className="nav-link">Home</a>
+          <a className={classes.navlink}>Home</a>
         </ActiveLink>
       </li>
-      <li>
+      <li className={classes.li} >
         <ActiveLink activeClassName="active" href="/about">
-          <a className="nav-link">About</a>
+          <a className={classes.navlink}>About</a>
         </ActiveLink>
       </li>
-      <li>
+      <li className={classes.li}>
         <ActiveLink activeClassName="active" href="/[slug]" as="/dynamic-route">
-          <a className="nav-link">Dynamic Route</a>
+          <a className={classes.navlink}>Dynamic Route</a>
         </ActiveLink>
+        <div className={`${classes.sidebar} nav`}>
+
+        </div>
       </li>
     </ul>
   </nav>

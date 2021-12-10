@@ -1,5 +1,6 @@
+import Layout from '../components/Navigation/Layout';
 import '../styles/globals.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
@@ -10,10 +11,13 @@ function MyApp({ Component, pageProps }) {
     
 
   
-    <Navigation>
+    //<Navigation>
+    <Layout {...pageProps}>
       <Component {...pageProps} />
+
+    </Layout >
     
-    </Navigation>
+   // </Navigation>
         
      
   );
