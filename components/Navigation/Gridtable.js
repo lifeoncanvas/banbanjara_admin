@@ -4,11 +4,11 @@ import {Table} from 'reactstrap'
 import { MdDeleteOutline,MdDone,MdCreate} from "react-icons/md";
 
 
-const Gridtable = () => {
+const Gridtable = (props) => {
 	return (
 		<div className={classes.gridtable}>
 			  <Table borderless >
-        <thead>
+        {/* <thead>
           <tr>
             <th>SR.no</th>
             <th>Full Name</th>
@@ -17,14 +17,14 @@ const Gridtable = () => {
             <th>Status</th>
             <th>Action</th>
           </tr>
-        </thead>
+        </thead> */}
         <tbody >
           <tr>
-            <th scope="row">1</th>
-            <td>Upasana Dalvi</td>
-            <td>zoe@gmail.com</td>
-            <td>9422036032</td>
-            <td>Active</td>
+            <th scope="row">{props.srnno}</th>
+            <td>{props.name}</td>
+            <td>{props.email}</td>
+            <td>{props.phone}</td>
+            <td>{props.status}</td>
             <td>
               <MdCreate/>
 
@@ -32,7 +32,7 @@ const Gridtable = () => {
               <MdDone/>
             </td>
           </tr>
-          <tr>
+          {/* <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
@@ -43,7 +43,7 @@ const Gridtable = () => {
             <td>Larry</td>
             <td>the Bird</td>
             <td>@twitter</td>
-          </tr>
+          </tr> */}
         </tbody>
       </Table>
 
